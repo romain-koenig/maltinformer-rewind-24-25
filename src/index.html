@@ -8,30 +8,37 @@
   <body class="bg-bg text-primary font-sans">
 
     <main class="h-screen overflow-y-scroll snap-y snap-mandatory">
+      <!--
+      d888888b d888888b d888888b db      d88888b 
+      `~~88~~'   `88'   `~~88~~' 88      88'     
+         88       88       88    88      88ooooo 
+         88       88       88    88      88~~~~~ 
+         88      .88.      88    88booo. 88.     
+         YP    Y888888P    YP    Y88888P Y88888P  
+                                 -->
 
-      <!-- Slide 1: Title -->
-      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-bg text-primary relative overflow-hidden">
-        <!-- Watermark Logo (Background) -->
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-bg text-primary relative overflow-hidden bg-gradient-to-br from-bg via-[#ddfff6] to-white">
+        <!-- Watermark: one logo only! -->
         <img src="logo-malt-informer.svg"
        alt=""
-       class="pointer-events-none select-none absolute opacity-5 w-[60vw] max-w-none bottom-0 right-0 translate-x-1/4 translate-y-1/4 -rotate-12"
+       class="pointer-events-none select-none absolute opacity-5 w-[40vw] sm:w-[80vw] max-w-none bottom-0 right-0 translate-x-1/4 translate-y-1/4 -rotate-12"
        draggable="false"/>
 
-        <!-- Foreground Content -->
+        <!-- Main content -->
         <div class="relative flex flex-col items-center z-10">
           <h1 class="text-5xl md:text-7xl font-light tracking-tight mb-3 text-center">
-      Malteurop<span class="font-bold">&nbsp;IT</span>
+      Malteurop <span class="font-bold">IT</span>
           </h1>
           <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-8 text-accent text-center">
       REWIND <span class="opacity-70">2024/2025</span>
           </h2>
-          <img src="ITTeam.svg" alt="Malt Informer Logo" class="w-[240px] mb-6"/>
           <p class="text-lg md:text-xl text-primary/80 mb-8 text-center max-w-lg">
       One year of progress, connection, and IT teamwork at Malteurop
     </p>
-          <!-- Horizontal logo for accent; use a responsive width for reliability -->
-          <p class="text-lg md:text-xl text-primary/80 mb-8 text-center max-w-lg">Powered by</p>
-          <img src="horizontal-malt-informer.svg" alt="Malt Informer Logo" class="w-[240px] mb-6"/>
+          <p class="text-base text-primary/60 mb-2">
+      Powered by
+    </p>
+          <img src="horizontal-malt-informer.svg" alt="Malt Informer Logo" class="w-[160px] md:w-[240px] mb-6"/>
           <p class="text-base text-cta font-medium">
       Scroll to begin
     </p>
@@ -41,26 +48,261 @@
         </div>
       </section>
 
-      <!-- Slide 2: Projects -->
+      <!-- 
+        d8888b. d8888b.  .d88b.     d88b d88888b  .o88b. d888888b .d8888. 
+        88  `8D 88  `8D .8P  Y8.    `8P' 88'     d8P  Y8 `~~88~~' 88'  YP 
+        88oodD' 88oobY' 88    88     88  88ooooo 8P         88    `8bo.   
+        88~~~   88`8b   88    88     88  88~~~~~ 8b         88      `Y8b. 
+        88      88 `88. `8b  d8' db. 88  88.     Y8b  d8    88    db   8D 
+        88      88   YD  `Y88P'  Y8888P  Y88888P  `Y88P'    YP    `8888Y' 
+       -->
+
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-bg text-primary relative overflow-hidden">
+
+        <div class="relative z-10 flex flex-col items-center w-full max-w-xl">
+          <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-8 animate-fade-in-up">
+            <span class="text-primary">30 projects in our roadmap</span><br/>
+            <span class="text-accent">150 topics</span> managed 🚀
+          </h2>
+          <div class="flex items-center gap-4 mb-8 animate-fade-in delay-200">
+            <span class="bg-accent/20 text-accent rounded-full px-4 py-2 font-bold text-lg">30 official</span>
+            <span class="bg-primary/10 text-primary rounded-full px-4 py-2 font-bold text-lg">150+ total</span>
+          </div>
+          <div class="text-xl text-primary/80 mb-10 text-center max-w-md animate-fade-in delay-400">
+      From the smallest fixes to the biggest launches, every topic moved us forward.<br/>
+      Now, let’s dive into some project highlights!
+          </div>
+          <svg class="mt-4 animate-bounce text-cta" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 4v24M8 20l8 8 8-8"/>
+          </svg>
+        </div>
+      </section>
+
+      <!--
+        d8888b.    d88b         d8888b. d88888b d888888b  .d8b.  d888888b db      .d8888. 
+        88  `8D    `8P'         88  `8D 88'     `~~88~~' d8' `8b   `88'   88      88'  YP 
+        88oodD'     88          88   88 88ooooo    88    88ooo88    88    88      `8bo.   
+        88~~~       88          88   88 88~~~~~    88    88~~~88    88    88        `Y8b. 
+        88      db. 88  db      88  .8D 88.        88    88   88   .88.   88booo. db   8D 
+        88      Y8888P  VP      Y8888D' Y88888P    YP    YP   YP Y888888P Y88888P `8888Y' 
+      -->
+
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-bg text-primary relative overflow-hidden">
+        <div class="relative z-10 flex flex-col items-center w-full max-w-3xl px-2">
+          <h2 class="text-2xl md:text-4xl font-extrabold text-center mb-10 animate-fade-in-up">
+            <span class="text-accent">Project Journeys</span><br/>
+      Progress that matters
+    </h2>
+          <div class="flex flex-col gap-8 w-full">
+            <!-- Project 1 -->
+            <div class="bg-white/95 rounded-2xl shadow-xl p-8 flex flex-col md:flex-row md:items-center md:gap-10 min-h-[220px] animate-fade-in-up">
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-2xl font-bold text-primary">Carl</div>
+                  <span class="ml-2 bg-accent/10 text-accent text-xs font-semibold rounded-full px-3 py-1">Budget: €50K</span>
+                </div>
+                <div class="text-sm text-primary/70 mb-2">
+                  <span class="font-semibold">Start:</span> July 2024<br>
+                  <span class="font-semibold">Now:</span> June 2025
+          </div>
+                <div class="my-2 flex items-center gap-2 text-primary/60">
+                  <span class="text-xs">V5</span>
+                  <span class="w-12 h-1 bg-accent rounded"></span>
+                  <span class="text-xs">Change of sponsors</span>
+                  <span class="w-12 h-1 bg-accent rounded"></span>
+                  <span class="text-xs">Starting out V7 Rollout</span>
+                </div>
+                <div class="mt-2 text-primary/90">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat amet corporis nostrum adipisci enim ad reprehenderit qui. Quod dolorem necessitatibus itaque ducimus harum nam quis. Unde reiciendis praesentium quia pariatur.
+          </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-white/95 rounded-2xl shadow-xl p-8 flex flex-col md:flex-row md:items-center md:gap-10 min-h-[220px] animate-fade-in-up delay-200">
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-2xl font-bold text-primary">CRM - Salesforce</div>
+                  <span class="ml-2 bg-highlight/10 text-highlight text-xs font-semibold rounded-full px-3 py-1">Budget: €30K</span>
+                </div>
+                <div class="text-sm text-primary/70 mb-2">
+                  <span class="font-semibold">Start:</span> August 2024<br>
+                  <span class="font-semibold">Now:</span> May 2025
+          </div>
+                <div class="my-2 flex items-center gap-2 text-primary/60">
+                  <span class="text-xs">RFP</span>
+                  <span class="w-8 h-1 bg-highlight rounded"></span>
+                  <span class="text-xs">Rollout</span>
+                </div>
+                <div class="mt-2 text-primary/90">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam suscipit necessitatibus ad voluptates enim saepe commodi, fugiat cupiditate illum? Iste accusamus cumque nemo minima debitis! At sunt pariatur repellat?
+          </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 text-primary/60 text-center">
+            <span class="font-medium">Next:</span> More project journeys coming up…
+    </div>
+          <svg class="mt-4 animate-bounce text-cta" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 4v24M8 20l8 8 8-8"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- LOOP -->
       <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-primary text-bg">
-        <div class="text-5xl font-bold">🚀 37 Projects</div>
-        <div class="mt-4 text-2xl font-medium">driven by our amazing team</div>
+        <div class="text-5xl font-bold">🚀 Here we loop</div>
+        <div class="mt-4 text-2xl font-medium">on ~12 projects</div>
       </section>
 
-      <!-- Slide 3: Headcount -->
-      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-accent text-primary">
-        <div class="text-5xl font-bold">👩‍💻 24 Team Members</div>
-        <div class="mt-4 text-2xl font-medium">Collaborating across departments</div>
+      <!---
+      db   dD d8888b. d888888b 
+      88 ,8P' 88  `8D   `88'   
+      88,8P   88oodD'    88    
+      88`8b   88~~~      88    
+      88 `88. 88        .88.   
+      YP   YD 88      Y888888P 
+      -->
+
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-bg text-primary relative overflow-hidden">
+        <div class="relative z-10 flex flex-col items-center w-full max-w-2xl px-2">
+          <h2 class="text-2xl md:text-4xl font-extrabold text-center mb-8 animate-fade-in-up">
+      This Year, We Delivered
+    </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full mb-6">
+            <div class="bg-accent/10 rounded-2xl shadow-md p-6 flex flex-col items-center animate-fade-in-up">
+              <div class="text-4xl font-bold text-accent mb-2">+7</div>
+              <div class="text-lg text-primary/80">Major launches</div>
+            </div>
+            <div class="bg-highlight/10 rounded-2xl shadow-md p-6 flex flex-col items-center animate-fade-in-up delay-100">
+              <div class="text-4xl font-bold text-highlight mb-2">12</div>
+              <div class="text-lg text-primary/80">Upgrades completed</div>
+            </div>
+            <div class="bg-primary/10 rounded-2xl shadow-md p-6 flex flex-col items-center animate-fade-in-up delay-200">
+              <div class="text-4xl font-bold text-primary mb-2">98%</div>
+              <div class="text-lg text-primary/80">User satisfaction</div>
+            </div>
+            <div class="bg-accent/10 rounded-2xl shadow-md p-6 flex flex-col items-center animate-fade-in-up delay-300">
+              <div class="text-4xl font-bold text-accent mb-2">0</div>
+              <div class="text-lg text-primary/80">Missed deadlines</div>
+            </div>
+          </div>
+          <div class="mt-4 text-primary/70 text-center">
+      ...and kept the whole ecosystem connected, every week.
+    </div>
+        </div>
       </section>
 
-      <!-- Slide 4: Recipients & Budget -->
+      <!--
+        d888888b d88888b  .d8b.  .88b  d88. 
+        `~~88~~' 88'     d8' `8b 88'YbdP`88 
+           88    88ooooo 88ooo88 88  88  88 
+           88    88~~~~~ 88~~~88 88  88  88 
+           88    88.     88   88 88  88  88 
+           YP    Y88888P YP   YP YP  YP  YP 
+      -->
+
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-bg text-primary relative overflow-hidden">
+        <div class="relative z-10 flex flex-col items-center w-full max-w-2xl px-2">
+          <h2 class="text-2xl md:text-4xl font-extrabold text-center mb-8 animate-fade-in-up">
+      People Power<br/>
+            <span class="text-accent font-bold">Our Team</span> & <span class="text-highlight font-bold">Partners</span>
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full mb-6">
+            <!-- Internal Team -->
+            <div class="bg-white/90 rounded-2xl shadow-md p-6 flex flex-col items-center animate-fade-in-up">
+              <div class="text-5xl mb-2">🧑‍💻</div>
+              <div class="text-3xl font-extrabold text-primary mb-1">12</div>
+              <div class="text-lg text-primary/80 font-medium mb-1">Internal IT</div>
+              <div class="text-primary/60 text-sm">The core crew at Malteurop</div>
+            </div>
+            <!-- Local Relays -->
+            <div class="bg-white/90 rounded-2xl shadow-md p-6 flex flex-col items-center animate-fade-in-up delay-100">
+              <div class="text-5xl mb-2">🌍</div>
+              <div class="text-3xl font-extrabold text-accent mb-1">7</div>
+              <div class="text-lg text-accent font-medium mb-1">Local Relays (VVS)</div>
+              <div class="text-primary/60 text-sm">On the ground, everywhere we operate</div>
+            </div>
+            <!-- Externals -->
+            <div class="bg-white/90 rounded-2xl shadow-md p-6 flex flex-col items-center animate-fade-in-up delay-200">
+              <div class="text-5xl mb-2">🤝</div>
+              <div class="text-3xl font-extrabold text-highlight mb-1">6</div>
+              <div class="text-lg text-highlight font-medium mb-1">External FTEs</div>
+              <div class="text-primary/60 text-sm">Expertise, whenever and wherever needed</div>
+            </div>
+            <!-- Strategic Partners -->
+            <div class="bg-white/90 rounded-2xl shadow-md p-6 flex flex-col items-center animate-fade-in-up delay-300">
+              <div class="text-5xl mb-2">💡</div>
+              <div class="text-2xl font-bold text-primary mb-1">Oxya, Viséo…</div>
+              <div class="text-lg text-primary/80 font-medium mb-1">Strategic Partners</div>
+              <div class="text-primary/60 text-sm">Data, infra, and more (thank you!)</div>
+            </div>
+          </div>
+          <div class="mt-6 text-primary/70 text-center max-w-lg">
+      Together, we moved projects forward, solved problems, and kept Malteurop’s digital heart beating.<br>
+            <span class="text-primary/50 text-xs italic">*Not all heroes wear capes, but some do wear IT badges.</span>
+          </div>
+        </div>
+      </section>
+
+      <!--
+      88b  d88. d888888b 
+      88'YbdP`88   `88'   
+      88  88  88    88    
+      88  88  88    88    
+      88  88  88   .88.   
+      YP  YP  YP Y888888P  
+      -->
+
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-bg text-primary relative overflow-hidden">
+        <!-- Optional: faint horizontal logo as a bottom watermark -->
+        <img src="horizontal-malt-informer.svg"
+       alt=""
+       class="pointer-events-none select-none absolute opacity-5 w-[90vw] max-w-none left-1/2 -translate-x-1/2 bottom-0"
+       draggable="false"/>
+
+        <div class="relative z-10 flex flex-col items-center w-full max-w-xl">
+          <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-10 animate-fade-in-up">
+      Malt Informer:<br/>The Pulse of <span class="text-accent">2024/2025</span>
+          </h2>
+          <div class="text-xl text-primary/90 mb-8 animate-fade-in delay-300 text-center italic font-medium">
+      Our motto: <span class="font-extrabold"> We share info so that no one works in a silo<sup>*</sup>
+            </span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-8">
+            <!-- Stat card 1 -->
+            <div class="bg-white/70 rounded-2xl shadow-xl py-8 px-4 flex flex-col items-center animate-fade-in-up">
+              <div class="text-5xl font-bold text-accent mb-2">40</div>
+              <div class="text-lg font-medium text-primary/80">Issues Published</div>
+            </div>
+            <!-- Stat card 2 -->
+            <div class="bg-white/70 rounded-2xl shadow-xl py-8 px-4 flex flex-col items-center animate-fade-in-up delay-200">
+              <div class="text-5xl font-bold text-highlight mb-2">35</div>
+              <div class="text-lg font-medium text-primary/80">Active Recipients</div>
+            </div>
+            <!-- Stat card 3 -->
+            <div class="bg-white/70 rounded-2xl shadow-xl py-8 px-4 flex flex-col items-center animate-fade-in-up delay-300">
+              <div class="text-5xl font-bold text-primary mb-2">4</div>
+              <div class="text-lg font-medium text-primary/80">continents, from <span class="text-accent font-semibold">AUS&nbsp;🇦🇺</span> to <span class="text-accent font-semibold">USA&nbsp;🇺🇸</span></div>
+            </div>
+          </div>
+
+          <div class="text-xs text-primary/50 mt-2 animate-fade-in delay-700 text-center max-w-xs">
+      *Except for those who work in, you know, actual silos. We salute you.
+    </div>
+          <svg class="mt-4 animate-bounce text-cta" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 4v24M8 20l8 8 8-8"/>
+          </svg>
+        </div>
+      </section>
+
       <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-cta text-white">
-        <div class="text-5xl font-bold">1,158 Recipients</div>
-        <div class="mt-4 text-2xl font-medium">€1.2M Budget Managed</div>
+        <div class="text-5xl font-bold">Thanks for reading!</div>
+        <div class="mt-4 text-2xl font-medium">Have a great new FY!</div>
+
       </section>
     </main>
 
-    <footer class="fixed bottom-2 left-1/2 -translate-x-1/2 text-xs text-primary/40">Made with Tailwind CSS 4, 2025</footer>
+    <footer class="fixed bottom-2 left-1/2 -translate-x-1/2 text-xs text-primary/40">&copy; 2025 Malteurop IT Team</footer>
   </body>
 
 </html>
