@@ -11,6 +11,8 @@
   from { opacity: 0; transform: translateY(30px);}
   to { opacity: 1; transform: translateY(0);}
 }
+.animate-fade-in-up { animation: fade-in-up 1s cubic-bezier(.23,1.08,.68,.53) both;}
+
 @keyframes fade-in {
   from { opacity: 0;}
   to { opacity: 1;}
@@ -18,3 +20,5 @@
 .animate-fade-in-up { animation: fade-in-up 1s cubic-bezier(.23,1.08,.68,.53) both;}
 .animate-fade-in { animation: fade-in 1s ease both;}
 .delay-200 { animation-delay: 0.2s;}
+
+

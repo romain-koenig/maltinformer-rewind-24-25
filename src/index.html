@@ -6,33 +6,61 @@
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body class="bg-bg text-primary font-sans">
-    <!-- Slide 1: Title -->
-    <section class="min-h-screen flex flex-col items-center justify-center">
-      <h1 class="text-6xl font-extrabold mb-6 animate-fade-in-up">MaltInformer Rewind<br>
-        <span class="text-accent">2024/2025</span></h1>
-      <p class="text-xl mt-2 text-primary/80 animate-fade-in delay-200">A year in review — scroll to explore</p>
-      <svg class="mt-12 animate-bounce" width="32" height="32" fill="none" stroke="currentColor"><path d="M16 4v24M8 20l8 8 8-8" stroke-width="2"/></svg>
-    </section>
 
-    <!-- Slide 2: Projects -->
-    <section class="min-h-screen flex flex-col items-center justify-center bg-primary text-bg">
-      <div class="text-5xl font-bold animate-fade-in-up">🚀 37 Projects</div>
-      <div class="mt-4 text-2xl font-medium animate-fade-in delay-200">driven by our amazing team</div>
-    </section>
+    <main class="h-screen overflow-y-scroll snap-y snap-mandatory">
 
-    <!-- Slide 3: Headcount -->
-    <section class="min-h-screen flex flex-col items-center justify-center bg-accent text-primary">
-      <div class="text-5xl font-bold animate-fade-in-up">👩‍💻 24 Team Members</div>
-      <div class="mt-4 text-2xl font-medium animate-fade-in delay-200">Collaborating across departments</div>
-    </section>
+      <!-- Slide 1: Title -->
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-bg text-primary relative overflow-hidden">
+        <!-- Watermark Logo (Background) -->
+        <img src="logo-malt-informer.svg"
+       alt=""
+       class="pointer-events-none select-none absolute opacity-5 w-[60vw] max-w-none bottom-0 right-0 translate-x-1/4 translate-y-1/4 -rotate-12"
+       draggable="false"/>
 
-    <!-- Slide 4: Recipients & Budget -->
-    <section class="min-h-screen flex flex-col items-center justify-center bg-cta text-white">
-      <div class="text-5xl font-bold animate-fade-in-up">1,158 Recipients</div>
-      <div class="mt-4 text-2xl font-medium animate-fade-in delay-200">€1.2M Budget Managed</div>
-    </section>
+        <!-- Foreground Content -->
+        <div class="relative flex flex-col items-center z-10">
+          <h1 class="text-5xl md:text-7xl font-light tracking-tight mb-3 text-center">
+      Malteurop<span class="font-bold">&nbsp;IT</span>
+          </h1>
+          <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-8 text-accent text-center">
+      REWIND <span class="opacity-70">2024/2025</span>
+          </h2>
+          <img src="ITTeam.svg" alt="Malt Informer Logo" class="w-[240px] mb-6"/>
+          <p class="text-lg md:text-xl text-primary/80 mb-8 text-center max-w-lg">
+      One year of progress, connection, and IT teamwork at Malteurop
+    </p>
+          <!-- Horizontal logo for accent; use a responsive width for reliability -->
+          <p class="text-lg md:text-xl text-primary/80 mb-8 text-center max-w-lg">Powered by</p>
+          <img src="horizontal-malt-informer.svg" alt="Malt Informer Logo" class="w-[240px] mb-6"/>
+          <p class="text-base text-cta font-medium">
+      Scroll to begin
+    </p>
+          <svg class="mt-2 animate-bounce text-cta" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 4v24M8 20l8 8 8-8"/>
+          </svg>
+        </div>
+      </section>
 
-    <footer class="absolute bottom-2 left-1/2 -translate-x-1/2 text-xs text-primary/40">Made with Tailwind CSS 4, 2025</footer>
+      <!-- Slide 2: Projects -->
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-primary text-bg">
+        <div class="text-5xl font-bold">🚀 37 Projects</div>
+        <div class="mt-4 text-2xl font-medium">driven by our amazing team</div>
+      </section>
+
+      <!-- Slide 3: Headcount -->
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-accent text-primary">
+        <div class="text-5xl font-bold">👩‍💻 24 Team Members</div>
+        <div class="mt-4 text-2xl font-medium">Collaborating across departments</div>
+      </section>
+
+      <!-- Slide 4: Recipients & Budget -->
+      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-cta text-white">
+        <div class="text-5xl font-bold">1,158 Recipients</div>
+        <div class="mt-4 text-2xl font-medium">€1.2M Budget Managed</div>
+      </section>
+    </main>
+
+    <footer class="fixed bottom-2 left-1/2 -translate-x-1/2 text-xs text-primary/40">Made with Tailwind CSS 4, 2025</footer>
   </body>
 
 </html>
