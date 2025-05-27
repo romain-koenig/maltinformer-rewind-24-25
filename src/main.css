@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #003d48;
+  --color-accent: #9cbb72;
+  --color-highlight: #63a6a0;
+  --color-cta: #ea5b0c;
+  --color-bg: #f4f4fa;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes fade-in {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+.animate-fade-in-up { animation: fade-in-up 1s cubic-bezier(.23,1.08,.68,.53) both;}
+.animate-fade-in { animation: fade-in 1s ease both;}
+.delay-200 { animation-delay: 0.2s;}
