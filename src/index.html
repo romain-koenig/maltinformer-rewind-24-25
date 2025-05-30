@@ -2,49 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <title>MaltInformer Recap 2024/2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Malteurop IT Rewind 2024/2025</title>
     <link rel="stylesheet" href="styles.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-bg text-primary font-sans">
-
+    <!-- Main container with snapping -->
     <main class="h-screen overflow-y-scroll snap-y snap-mandatory">
-      <!--
-      d888888b d888888b d888888b db      d88888b 
-      `~~88~~'   `88'   `~~88~~' 88      88'     
-         88       88       88    88      88ooooo 
-         88       88       88    88      88~~~~~ 
-         88      .88.      88    88booo. 88.     
-         YP    Y888888P    YP    Y88888P Y88888P  
-                                 -->
 
-      <section class="snap-start min-h-screen flex flex-col items-center justify-center bg-bg text-primary relative overflow-hidden bg-gradient-to-br from-bg via-[#ddfff6] to-white">
-        <!-- Watermark: one logo only! -->
-        <img src="logo-malt-informer.svg"
-       alt=""
-       class="pointer-events-none select-none absolute opacity-5 w-[40vw] sm:w-[80vw] max-w-none bottom-0 right-0 translate-x-1/4 translate-y-1/4 -rotate-12"
-       draggable="false"/>
+      <!-- Hero Section with snap-start -->
+      <section class="snap-start relative flex items-center justify-center h-screen bg-gradient-to-br from-bg via-[#ddfff6] to-white overflow-hidden px-4">
+        <!-- Watermark logo positioned off-canvas -->
+        <img
+          src="logo-malt-informer.svg"
+          alt="Watermark"
+          class="pointer-events-none select-none absolute opacity-5 w-[40vw] sm:w-[80vw] max-w-none bottom-0 right-0 translate-x-1/4 translate-y-1/4 -rotate-12"
+          draggable="false"
+/>
 
-        <!-- Main content -->
-        <div class="relative flex flex-col items-center z-10">
-          <h1 class="text-5xl md:text-7xl font-light tracking-tight mb-3 text-center">
-      Malteurop <span class="font-bold">IT</span>
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center space-y-4">
+          <h1 class="text-5xl md:text-7xl font-light tracking-tight">
+            Malteurop <span class="font-bold">IT</span>
           </h1>
-          <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-8 text-accent text-center">
-      REWIND <span class="opacity-70">2024/2025</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-accent">
+            REWIND <span class="opacity-70">2024/2025</span>
           </h2>
-          <p class="text-lg md:text-xl text-primary/80 mb-8 text-center max-w-lg">
-      One year of progress, connection, and IT teamwork at Malteurop
-    </p>
-          <p class="text-base text-primary/60 mb-2">
-      Powered by
-    </p>
-          <img src="horizontal-malt-informer.svg" alt="Malt Informer Logo" class="w-[160px] md:w-[240px] mb-6"/>
-          <p class="text-base text-cta font-medium">
-      Scroll to begin
-    </p>
-          <svg class="mt-2 animate-bounce text-cta" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M16 4v24M8 20l8 8 8-8"/>
-          </svg>
+          <p class="max-w-lg mx-auto text-lg md:text-xl text-primary/80">
+            One year of progress, connection, and IT teamwork at Malteurop
+          </p>
+          <p class="text-base text-primary/60">Powered by</p>
+          <img src="horizontal-malt-informer.svg" alt="Malt Informer" class="mx-auto w-40 md:w-60"/>
+          <div class="space-y-1">
+            <p class="text-base text-cta font-medium">Scroll to begin</p>
+            <svg class="mx-auto animate-bounce text-cta" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 4v24M8 20l8 8 8-8"/>
+            </svg>
+          </div>
         </div>
       </section>
 
